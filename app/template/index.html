@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+  <form action="/prediksi" method="post">
+    <div class="mt-xl-5 text-center align-self-center">
+      <label for="formGroupExampleInput" class="form-label">Bulan </label>
+      <input
+        type="text"
+        name="bulan"
+        class="form-control w-50 mx-auto text-center"
+        id="formGroupExampleInput"
+        placeholder="Masukan Bulan keberapa untuk prediksi hasil total penjualan"
+      />
+      <button type="submit" class="btn btn-primary mt-3">Prediksi</button>
+      <p style="font-size: 1.2em; margin-top: 10px">{{ prediction_text }}</p>
+    </div>
+  </form>
+</div>
+
+{%endblock%}
