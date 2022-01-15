@@ -35,4 +35,4 @@ def getPredictSalesInMonth():
 
     Y_pred = m*bulan + c
     print(round(Y_pred))
-    return render_template('index.html', prediction_text='Total hasil penjualan pada bulan {} adalah :  {}'.format(bulan, round(Y_pred)))
+    return render_template('index.html', prediction_text='Prediksi Total hasil penjualan pada bulan {} adalah :  {}'.format(bulan, round(Y_pred)))
